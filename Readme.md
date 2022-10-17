@@ -1,13 +1,11 @@
-#Platform
+### Java In Brief
 ## Java and Platform Independence
-- [Image](images/JavaPlatFormIndependence.png)
 - Build once, Run anywhere
 - Java is one of the most popular platform  independent  languages.  Once  we  compile  a  java  program  and  build  a  jar,  we  can  run  the  jar  (compiled  java program) in any Operating System where a JVM is installed. 
 - What is ByteCode?
 - The  executable  instructions  are  different  in  different  operating  systems.  So,  there  are  different  JVM s  for  different  operating  systems.  A  JVM  for  windows  is  different  from  a  JVM  for  mac. 
 
 ## JDK vs JVM VS JRE
-- [Image](images/jvm-jre-jdk.jpg)
 - JVM
   - Virtual machine that run the Java bytecode.
   - Makes java portable.
@@ -17,7 +15,6 @@
   - JRE + Compilers + Debuggers
 
 ## Classloaders and Types
-- [Image](images/JavaClassLoaders.png)
 - A Java program is made up of a number of custom classes (written by programmers like us) and core  classes (which come pre-packaged with Java). When a program is executed, JVM needs to load the  content of all the needed class. JVM uses a ClassLoader to find the classes. 
 - System Class Loader : Loads all classes from CLASSPATH 
 - Extension Class Loader : Loads all classes from extension directory 
@@ -26,7 +23,7 @@
 
 #Language Basics
 ## Why do we need Wrapper Classes?
-- [Example 1](src/main/java/com/in28minutes/java/wrapper/WrapperExamples.java)
+- [Example 1](src/concept/examples/wrapper/WrapperExamples.java)
 - A wrapper class wraps (encloses) around a data type and gives it an object appearance
 - Wrapper: Boolean,Byte,Character,Double,Float,Integer,Long,Short 
 - Primitive: boolean,byte,char ,double, float, int , long,short
@@ -97,14 +94,14 @@ String str2 = new String("value");
 - Immutability : String
 - Thread Safety : String(immutable), StringBuffer
 - Performance : StringBuilder (especially when a number of modifications are made.)
-- [Example 1](src/main/java/com/in28minutes/java/string/StringBufferBuilderExamples.java)
+- [Example 1](src/concept/examples/string/StringBufferBuilderExamples.java)
 
 #OOPS Basics
 ## Inheritance
 - Basics of Inheritance
-- Every Class Extends Object - See [Example](src/main/java/com/in28minutes/java/oops/inheritance/EveryClassExtendsObject.java)
-- [Example 1](src/main/java/com/in28minutes/java/oops/inheritance/InheritanceExamples.java)
-- Reuse Through Inheritance - [TestReuse.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/TestReuse.java) [Hero.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Hero.java) [Actor.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Actor.java) [Comedian.java](src/main/java/com/in28minutes/java/oops/inheritance/reuse/Comedian.java)
+- Every Class Extends Object - See [Example](src/concept/examples/oops/inheritance/EveryClassExtendsObject.java)
+- [Example 1](src/concept/examples/oops/inheritance/InheritanceExamples.java)
+- Reuse Through Inheritance - [TestReuse.java](src/concept/examples/oops/inheritance/reuse/TestReuse.java) [Hero.java](src/concept/examples/oops/inheritance/reuse/Hero.java) [Actor.java](src/concept/examples/oops/inheritance/reuse/Actor.java) [Comedian.java](src/concept/examples/oops/inheritance/reuse/Comedian.java)
 - Example in Java Api : HashMap & TreeMap extend AbstractMap. 
 
 ## Method Overloading
@@ -116,20 +113,20 @@ String str2 = new String("value");
   - Methods  
   - public boolean addAll(Collection<? extends E> c)
   - public boolean addAll(int index, Collection<? extends E> c)
-- [Rules](src/main/java/com/in28minutes/java/oops/inheritance/overloading/OverloadingRules.java)
+- [Rules](src/concept/examples/oops/inheritance/overloading/OverloadingRules.java)
 
 ## Method Overriding
 - Java Example
   - HashMap public int size() overrides AbstractMap public int size()
-- [Example](src/main/java/com/in28minutes/java/oops/inheritance/overriding/OverridingRules.java)
+- [Example](src/concept/examples/oops/inheritance/overriding/OverridingRules.java)
 
 ## Interface
 - An interface is a contract: the guy writing the interface says, "hey, I accept things looking that way"
 - Interface represents common actions between Multiple Classes.
-- Basic Example : [Flyable](src/main/java/com/in28minutes/java/oops/interfaces/Flyable.java)
- [Aeropane](src/main/java/com/in28minutes/java/oops/interfaces/Aeroplane.java) [Bird](src/main/java/com/in28minutes/java/oops/interfaces/Bird.java)
+- Basic Example : [Flyable](src/concept/examples/oops/interfaces/Flyable.java)
+ [Aeropane](src/concept/examples/oops/interfaces/Aeroplane.java) [Bird](src/concept/examples/oops/interfaces/Bird.java)
 - Example in Java api : Map interface, Collection interface.
-- Rules and Examples : [Rules](src/main/java/com/in28minutes/java/oops/interfaces/IntefaceRules.java) [More Examples](src/main/java/com/in28minutes/java/oops/interfaces/InterfaceExamples.java)
+- Rules and Examples : [Rules](src/concept/examples/oops/interfaces/IntefaceRules.java) [More Examples](src/concept/examples/oops/interfaces/InterfaceExamples.java)
 - Can you extend an interface?
 - Can a class implement multiple interfaces?
 - What are the new features in interfaces introduced in Java 8?
@@ -145,7 +142,6 @@ String str2 = new String("value");
 - Example - Animal, Cat, Dog
 - An example of an abstract class in the JDK is AbstractMap, which is part of the Collections Framework. Its subclasses (which include HashMap, TreeMap, and ConcurrentHashMap) share many methods (including get, put, isEmpty, containsKey, and containsValue) that AbstractMap defines. 
   - example abstract method : public abstract Set<Entry<K,V>> entrySet();
-- [Another Example - Spring AbstractController] (https://github.com/spring-projects/spring-framework/blob/master/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/AbstractController.java)
 - [More Details](docs/abstract-class.md)
 
 ## Abstract Class vs Interface
@@ -167,41 +163,41 @@ String str2 = new String("value");
   - Actual operation involves registers, instruction sets, program counters etc. High level language we use abstracts those complex details.
 
 ## Encapsulation
-- [Example](src/main/java/com/in28minutes/java/oops/encapsulation/EncapsulationExample.java)
+- [Example](src/concept/examples/oops/encapsulation/EncapsulationExample.java)
 
 ## Inner Class
-- [Example](src/main/java/com/in28minutes/java/innerclass/InnerClassExamples.java)
-- [Example](src/main/java/com/in28minutes/java/innerclass/AnonymousClass.java)
+- [Example](src/concept/examples/innerclass/InnerClassExamples.java)
+- [Example](src/concept/examples/innerclass/AnonymousClass.java)
 
 #Access and Non Access Modifiers
 
 ## Final Modifier
-- [Final Class](src/main/java/com/in28minutes/java/classmodifiers/nonaccess/finalclass/FinalClass.java)
+- [Final Class](src/concept/examples/classmodifiers/nonaccess/finalclass/FinalClass.java)
 - Final Class examples : String, Integer, Double and other wrapper classes
-- [Final Member Variable](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/FinalMemberModifiersExample.java)
+- [Final Member Variable](src/concept/examples/membermodifiers/nonaccess/FinalMemberModifiersExample.java)
 - Final Variable example : java.lang.Math.PI
 - Final Method example : java.lang.Math.PI
 
 ## Member Access Modifiers
-- [Examples](src/main/java/com/in28minutes/java/membermodifiers/access)
+- [Examples](src/concept/examples/membermodifiers/access)
 
 ## Class Access Modifiers
-- [Examples](src/main/java/com/in28minutes/java/classmodifiers/)
+- [Examples](src/concept/examples/classmodifiers/)
 - public - Accessible from everywhere.
 - private and protected cannot be used on a class. 
 
 ## Static Modifier
-- [Example](src/main/java/com/in28minutes/java/membermodifiers/nonaccess/StaticModifierExamples.java)
+- [Example](src/concept/examples/membermodifiers/nonaccess/StaticModifierExamples.java)
 - Examples in Java Api : Methods in Math class.
 
 #Constructors
 
 ## Constructors
-- [Example](src/main/java/com/in28minutes/java/object/constructors/ConstructorExamples.java)
+- [Example](src/concept/examples/object/constructors/ConstructorExamples.java)
 - Examples in Java Api : HashMap has 2 constructors
 
 ## Static Initializers
-- [Example](src/main/java/com/in28minutes/java/initializers/InitializerExamples.java)
+- [Example](src/concept/examples/initializers/InitializerExamples.java)
 
 #Collections
 
@@ -212,22 +208,22 @@ String str2 = new String("value");
 - [Interview Questions] (http://www.javainterview.in/p/collections-interview-questions.html)
 
 ## Hierarchy of Collection Interface?
-- [Hierarchy](src/main/java/com/in28minutes/java/collections/CollectionHierarchy.java)
+- [Hierarchy](src/concept/examples/collections/CollectionHierarchy.java)
 
 ## List
-- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+- [All Collections Examples](src/concept/examples/collections/examples/CollectionExamples.java)
 
 ## Map
-- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+- [All Collections Examples](src/concept/examples/collections/examples/CollectionExamples.java)
 
 ## Set
-- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+- [All Collections Examples](src/concept/examples/collections/examples/CollectionExamples.java)
 
 ## List vs Map vs Set
-- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+- [All Collections Examples](src/concept/examples/collections/examples/CollectionExamples.java)
 
 ## Comparing Objects in Collections
-- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+- [All Collections Examples](src/concept/examples/collections/examples/CollectionExamples.java)
 
 ## Collection Keywords : 
 - Hash - No Order is Maintained
@@ -236,10 +232,10 @@ String str2 = new String("value");
 - Set - No Duplicates
 
 ## HashSet vs TreeSet vs LinkedHashSet
-- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+- [All Collections Examples](src/concept/examples/collections/examples/CollectionExamples.java)
 
 ## TreeMap vs HashMap
-- [All Collections Examples](src/main/java/com/in28minutes/java/collections/examples/CollectionExamples.java)
+- [All Collections Examples](src/concept/examples/collections/examples/CollectionExamples.java)
 
 ## Concurrency in Collections
 - Synchronized collections are implemented using synchronized methods and synchronized blocks. Only one thread can executing any of the synchronized code at a given point in time. This places severe restrictions on the concurrency of threads – thereby affecting performance of the application. All the pre Java 5 synchronized collections (HashTable & Vector, for example) use this approach. Post Java 5, collections using new approaches to synchronization are available in Java. These are called concurrent collections. More details below.
@@ -259,8 +255,8 @@ String str2 = new String("value");
 - Fail Fast : Throws Concurrent Modification Exception if there are Concurrent Modifications
 - Fail Safe : Fail Safe Iterator makes copy of the internal data structure (object array) and iterates over the copied data structure. 
 - Fail Safe is efficient when traversal operations vastly outnumber mutations
-- [FailFast](src/main/java/com/in28minutes/java/collections/FailFast.java)
-- [FailSafe](src/main/java/com/in28minutes/java/collections/FailSafe.java)
+- [FailFast](src/concept/examples/collections/FailFast.java)
+- [FailSafe](src/concept/examples/collections/FailSafe.java)
 
 ## Atomic Operations
 - Atomic Access Java Tutorial states “In programming, an atomic action is one that effectively happens all at once. An atomic action cannot stop in the middle: it either happens completely, or it doesn't happen at all. No side effects of an atomic action are visible until the action is complete”.
@@ -275,27 +271,27 @@ String str2 = new String("value");
 ## Why do we use Generics?
 - [Generics Interview Questions](http://www.javainterview.in/p/generics-interview-questions.html)
 - Generics are used to create Generic Classes and Generic methods which can work with different Types(Classes).
-- [Example 1](src/main/java/com/in28minutes/java/generics/GenericsExamples.java)
+- [Example 1](src/concept/examples/generics/GenericsExamples.java)
 
 ## What are the restrictions that can be enforced on Generics?
-- [Example 2](src/main/java/com/in28minutes/java/generics/GenericsExamples2.java)
-- [Example 3](src/main/java/com/in28minutes/java/generics/GenericsExamples3.java)
+- [Example 2](src/concept/examples/generics/GenericsExamples2.java)
+- [Example 3](src/concept/examples/generics/GenericsExamples3.java)
 
 #Exception Handling in Java
 [Exception Handling Interview Questions](http://www.javainterview.in/p/exception-handling-interview-questions.html)
 
 ## Basics
-- [Example 1](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample1.java)
+- [Example 1](src/concept/examples/exceptionhandling/ExceptionHandlingExample1.java)
 
 ## Finally and when is code in finally not executed?
-- [Example 2](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample2.java)
+- [Example 2](src/concept/examples/exceptionhandling/ExceptionHandlingExample2.java)
 
 ## New Exception Handling Features
 - TODO - Code Examples
 
 ## Hierarchy of Exception Related Classes
-- [Example 1](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample1.java)
-- [Example 2](src/main/java/com/in28minutes/java/exceptionhandling/ExceptionHandlingExample2.java)
+- [Example 1](src/concept/examples/exceptionhandling/ExceptionHandlingExample1.java)
+- [Example 2](src/concept/examples/exceptionhandling/ExceptionHandlingExample2.java)
 
 ## When do you use Custom Exception?
 - When you want to define your own exceptions TODO
@@ -306,15 +302,15 @@ String str2 = new String("value");
 
 #Threads
 ## Need for Threads.
-- [Basic Example](src/main/java/com/in28minutes/java/threads/ThreadExamples.java)
+- [Basic Example](src/concept/examples/threads/ThreadExamples.java)
 
 ## Different States of a Thread
-- [Basic Example](src/main/java/com/in28minutes/java/threads/ThreadExamples.java)
+- [Basic Example](src/concept/examples/threads/ThreadExamples.java)
 
 ## Synchronization and Join Methods
-- [Synchronized Example](src/main/java/com/in28minutes/java/threads/ThreadExampleSynchronized.java)
-- [Wait and Notify](src/main/java/com/in28minutes/java/threads/ThreadWaitAndNotify.java)
-- [Deadlock Example](src/main/java/com/in28minutes/java/threads/ThreadDeadlock.java)
+- [Synchronized Example](src/concept/examples/threads/ThreadExampleSynchronized.java)
+- [Wait and Notify](src/concept/examples/threads/ThreadWaitAndNotify.java)
+- [Deadlock Example](src/concept/examples/threads/ThreadDeadlock.java)
 
 ## Executor Service
 - TODO
@@ -334,10 +330,10 @@ String str2 = new String("value");
 - TODO ObjectExamples.java missing
 
 ##toString method
-- [Example](src/main/java/com/in28minutes/java/object/ToStringExamples.java)
+- [Example](src/concept/examples/object/ToStringExamples.java)
 
 ##hashCode method
-- [Example](src/main/java/com/in28minutes/java/object/EqualsHashCodeExamples.java)
+- [Example](src/concept/examples/object/EqualsHashCodeExamples.java)
 - HashCode's are used in hashing to decide which group (or bucket) an object should be placed into. A group of object's might share the same hashcode.
 - The implementation of hashcode decides effectiveness of Hashing. A good hashing function evenly distributes object's into different groups (or buckets).
 - A good hashCode method should have the following properties 
@@ -348,7 +344,7 @@ equals() have not changed.
 obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 
 ##equals method
-- [Example](src/main/java/com/in28minutes/java/object/EqualsHashCodeExamples.java)
+- [Example](src/concept/examples/object/EqualsHashCodeExamples.java)
 - Any equals implementation should satisfy these properties:
   - Reflexive. For any reference value x, x.equals(x) returns true.
   - Symmetric. For any reference values x and y, x.equals(y) should return true if and only ify.equals(x) returns true.
@@ -420,12 +416,12 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 - TODO
 
 ## Assert
-- [Example](src/main/java/com/in28minutes/java/others/assertexample/AssertExamples.java)
+- [Example](src/concept/examples/others/assertexample/AssertExamples.java)
 
 ## Garbage Collection and finalize
 - Programmer has no control (other than finalize request and System.gc call - both of which are bad practices)
 - This is a big change from C++
-- [Example](src/main/java/com/in28minutes/java/others/garbagecollection/GarbageCollectionExamples.java)
+- [Example](src/concept/examples/others/garbagecollection/GarbageCollectionExamples.java)
 
 ## Which datatype should we use for financial calculations?
 - TODO
@@ -434,17 +430,17 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 - TODO
 
 ## Need for Serialization
-- [Example 1](src/main/java/com/in28minutes/java/serialization/SerializationExamples.java)
-- [Example 2](src/main/java/com/in28minutes/java/serialization/SerializationExamples2.java)
-- [Example 3](src/main/java/com/in28minutes/java/serialization/SerializationExamples3.java)
+- [Example 1](src/concept/examples/serialization/SerializationExamples.java)
+- [Example 2](src/concept/examples/serialization/SerializationExamples2.java)
+- [Example 3](src/concept/examples/serialization/SerializationExamples3.java)
 
 ## Why do we need an Enum?
-- [Basic Examples](src/main/java/com/in28minutes/java/enums/Enum.java)
-- [Advanced Examples 1](src/main/java/com/in28minutes/java/enums/EnumAdvanced.java)
-- [Advanced Examples 2](src/main/java/com/in28minutes/java/enums/EnumAdvanced2.java)
+- [Basic Examples](src/concept/examples/enums/Enum.java)
+- [Advanced Examples 1](src/concept/examples/enums/EnumAdvanced.java)
+- [Advanced Examples 2](src/concept/examples/enums/EnumAdvanced2.java)
 
 ## What are variable arguments?
-- [Example](src/main/java/com/in28minutes/java/varargs/VariableArgumentExamples.java)
+- [Example](src/concept/examples/varargs/VariableArgumentExamples.java)
 
 ## Cloning - Deep vs Shallow
 - TODO
@@ -457,21 +453,4 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 
 ## 20 Puzzles to Test Yourselves
 - TODO
-
-
-#Others
- - [Basics of Objects and Classes](docs/basics-class-object.md)
- - [Arrays](docs/arrays.md)
- - [Variables - including initialization](docs/variables-initialization-and-more.md)
- - [Operators](docs/operators.md)
- - [Control Flow - If, Switch, for and while](docs/control-flow-if-switch-for-while)
- - [Files](docs/file-io.md)
-
-#Frameworks
-- [Web Application Basics](https://github.com/in28minutes/BasicWebServletsIn28Minutes)
-- [Spring](https://github.com/in28minutes/SpringIn28Minutes)
-- [Spring MVC](https://github.com/in28minutes/SpringMvcStepByStep)
-- [Struts](https://github.com/in28minutes/Struts2StepByStep)
-- [Java EE Design Patterns](https://github.com/in28minutes/Java-EE-Design-Patterns)
-- [JPA/Hibernate](https://github.com/in28minutes/HibernateJPAStepByStep)
 
