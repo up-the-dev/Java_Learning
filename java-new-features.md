@@ -371,7 +371,7 @@ BiFunction<T, U, R>
  
  country -> country.getName();
  Country::name();
- 
+  
  
  //.parallelStream()
  On a 4-core machine with < 50 students, the sequential code was multiple times faster. 
@@ -385,7 +385,7 @@ myList.forEach(o -> /* do something with o here... */);
 This is discussed further in Iterable.forEach method (Java 8).
 A new JavaScript implementation codenamed Nashorn is available via javax.script (see Calling Other Languages via javax.script) and can also be run from the command line.
  
-#Functional Programming 
+# Functional Programming 
   a programming paradigm, a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids state and mutable data. Functional programming emphasizes functions that produce results that depend only on their inputs and not on the program state - i.e. pure mathematical functions. It is a declarative programming paradigm, which means programming is done with expressions. In functional code, the output value of a function depends only on the arguments that are input to the function, so calling a function f twice with the same value for an argument x will produce the same result f(x) both times. Eliminating side effects, i.e. changes in state that don’t depend on the function inputs, can make it much easier to understand and predict the behavior of a program, which is one of the key motivations for the development of functional programming
 ```
 \src\com\in28minutes\java\newfeatures\threads\Example1.java

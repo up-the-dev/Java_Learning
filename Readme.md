@@ -21,7 +21,7 @@
 - Bootstrap Class Loader : Loads all the Java core files 
 - When JVM needs to find a class, it starts with System Class Loader. If it is not found, it checks with  Extension Class Loader. If it not found, it goes to the Bootstrap Class Loader. If a class is still not found, a  ClassNotFoundException is thrown. 
 
-#Language Basics
+# Language Basics
 ## Why do we need Wrapper Classes?
 - [Example 1](src/concept/examples/wrapper/WrapperExamples.java)
 - A wrapper class wraps (encloses) around a data type and gives it an object appearance
@@ -66,7 +66,7 @@
 		System.out.println(nineC.equals(nineD));// true
 ```
 
-#Strings
+# Strings
 ## Are String's immutable?
 ```
 		//Strings are immutable
@@ -96,7 +96,7 @@ String str2 = new String("value");
 - Performance : StringBuilder (especially when a number of modifications are made.)
 - [Example 1](src/concept/examples/string/StringBufferBuilderExamples.java)
 
-#OOPS Basics
+# OOPS Basics
 ## Inheritance
 - Basics of Inheritance
 - Every Class Extends Object - See [Example](src/concept/examples/oops/inheritance/EveryClassExtendsObject.java)
@@ -169,7 +169,7 @@ String str2 = new String("value");
 - [Example](src/concept/examples/innerclass/InnerClassExamples.java)
 - [Example](src/concept/examples/innerclass/AnonymousClass.java)
 
-#Access and Non Access Modifiers
+# Access and Non Access Modifiers
 
 ## Final Modifier
 - [Final Class](src/concept/examples/classmodifiers/nonaccess/finalclass/FinalClass.java)
@@ -190,7 +190,7 @@ String str2 = new String("value");
 - [Example](src/concept/examples/membermodifiers/nonaccess/StaticModifierExamples.java)
 - Examples in Java Api : Methods in Math class.
 
-#Constructors
+# Constructors
 
 ## Constructors
 - [Example](src/concept/examples/object/constructors/ConstructorExamples.java)
@@ -199,7 +199,7 @@ String str2 = new String("value");
 ## Static Initializers
 - [Example](src/concept/examples/initializers/InitializerExamples.java)
 
-#Collections
+# Collections
 
 ## Why do we need Collections?
 - Arrays are not resizable.
@@ -277,7 +277,7 @@ String str2 = new String("value");
 - [Example 2](src/concept/examples/generics/GenericsExamples2.java)
 - [Example 3](src/concept/examples/generics/GenericsExamples3.java)
 
-#Exception Handling in Java
+# Exception Handling in Java
 [Exception Handling Interview Questions](http://www.javainterview.in/p/exception-handling-interview-questions.html)
 
 ## Basics
@@ -300,7 +300,7 @@ String str2 = new String("value");
 - When the calling method can do something about the exception being thrown TODO
 - In Spring, Most exceptions are unchecked.
 
-#Threads
+# Threads
 ## Need for Threads.
 - [Basic Example](src/concept/examples/threads/ThreadExamples.java)
 
@@ -315,7 +315,7 @@ String str2 = new String("value");
 ## Executor Service
 - TODO
 
-#Advanced OOPS
+# Advanced OOPS
 
 ## Coupling
 - See [More about OOPS](docs/oops-advanced.md)
@@ -329,10 +329,10 @@ String str2 = new String("value");
 ## Object class
 - TODO ObjectExamples.java missing
 
-##toString method
+## toString method
 - [Example](src/concept/examples/object/ToStringExamples.java)
 
-##hashCode method
+## hashCode method
 - [Example](src/concept/examples/object/EqualsHashCodeExamples.java)
 - HashCode's are used in hashing to decide which group (or bucket) an object should be placed into. A group of object's might share the same hashcode.
 - The implementation of hashcode decides effectiveness of Hashing. A good hashing function evenly distributes object's into different groups (or buckets).
@@ -343,7 +343,7 @@ equals() have not changed.
   - If obj1.equals(obj2) is false, it is NOT required that obj1.hashCode() is not equal to
 obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 
-##equals method
+## equals method
 - [Example](src/concept/examples/object/EqualsHashCodeExamples.java)
 - Any equals implementation should satisfy these properties:
   - Reflexive. For any reference value x, x.equals(x) returns true.
@@ -352,7 +352,7 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
   - Consistent. For any reference values x and y, multiple invocations of x.equals(y) consistently return true or consistently return false, if no information used in equals is modified.
   - For any non-null reference value x, x.equals(null) should return false.
 
-#Java New Features
+# Java New Features
 
 ## New Features in Java 5
 - TODO
@@ -366,7 +366,7 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 ## New Features in Java 8
 - TODO
 
-#Miscellaneous
+# Miscellaneous
 
 ## Annotations
 - TODO
