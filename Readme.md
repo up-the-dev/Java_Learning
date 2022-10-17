@@ -1,4 +1,4 @@
-## Java In Brief
+# Java In Brief
 ## Java and Platform Independence
 - Build once, Run anywhere
 - Java is one of the most popular platform  independent  languages.  Once  we  compile  a  java  program  and  build  a  jar,  we  can  run  the  jar  (compiled  java program) in any Operating System where a JVM is installed. 
