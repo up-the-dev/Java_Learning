@@ -201,7 +201,6 @@ String str2 = new String("value");
 - Arrays are not resizable.
 - Java Collections Framework allows you to use the right data structure, because one size does not fit all.
 - Java Collections Framework provides the correct abstractions, List, Map, Set
-- [Interview Questions] (http://www.javainterview.in/p/collections-interview-questions.html)
 
 ## Hierarchy of Collection Interface?
 - [Hierarchy](src/concept/examples/collections/CollectionHierarchy.java)
@@ -265,7 +264,6 @@ String str2 = new String("value");
 - A good example is AtomicInteger. To increment a value of AtomicInteger, we use the  incrementAndGet() method. Java ensures this operation is Atomic.
 
 ## Why do we use Generics?
-- [Generics Interview Questions](http://www.javainterview.in/p/generics-interview-questions.html)
 - Generics are used to create Generic Classes and Generic methods which can work with different Types(Classes).
 - [Example 1](src/concept/examples/generics/GenericsExamples.java)
 
@@ -274,7 +272,6 @@ String str2 = new String("value");
 - [Example 3](src/concept/examples/generics/GenericsExamples3.java)
 
 # Exception Handling in Java
-[Exception Handling Interview Questions](http://www.javainterview.in/p/exception-handling-interview-questions.html)
 
 ## Basics
 - [Example 1](src/concept/examples/exceptionhandling/ExceptionHandlingExample1.java)
