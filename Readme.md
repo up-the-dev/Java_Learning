@@ -113,7 +113,6 @@ String str2 = new String("value");
   - Methods  
   - public boolean addAll(Collection<? extends E> c)
   - public boolean addAll(int index, Collection<? extends E> c)
-- [Rules](src/concept/examples/oops/inheritance/overloading/OverloadingRules.java)
 
 ## Method Overriding
 - Java Example
@@ -142,7 +141,6 @@ String str2 = new String("value");
 - Example - Animal, Cat, Dog
 - An example of an abstract class in the JDK is AbstractMap, which is part of the Collections Framework. Its subclasses (which include HashMap, TreeMap, and ConcurrentHashMap) share many methods (including get, put, isEmpty, containsKey, and containsValue) that AbstractMap defines. 
   - example abstract method : public abstract Set<Entry<K,V>> entrySet();
-- [More Details](docs/abstract-class.md)
 
 ## Abstract Class vs Interface
 - Real Difference - Apple vs Orange
@@ -152,8 +150,6 @@ String str2 = new String("value");
   - A child class can only extend a single class. An interface can extend multiple interfaces. A class can implement multiple interfaces.
   - A child class can define abstract methods with the same or less restrictive visibility, whereas a class implementing an interface must define all interface methods as public
 
-## Polymorphism
-- [Polymorphism](docs/inheritance-and-polymorphism.md)
 
 ## Abstraction
 - Base of all programming
@@ -318,10 +314,8 @@ String str2 = new String("value");
 # Advanced OOPS
 
 ## Coupling
-- See [More about OOPS](docs/oops-advanced.md)
 
 ## Cohesion
-- [More about OOPS](docs/oops-advanced.md)
 
 ## Solid Principles
 - TODO
