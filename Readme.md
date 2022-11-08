@@ -415,7 +415,7 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 - [Example](src/concept/examples/others/garbagecollection/GarbageCollectionExamples.java)
 
 ## Which datatype should we use for financial calculations?
-- TODO
+- BigDecimal
 
 ## What is a Marker Interface?
 - TODO
@@ -440,8 +440,5 @@ obj2.hashCode(). Two unequal objects MIGHT have the same hashCode.
 - TODO
 
 ## Lambda Expressions
-- TODO
-
-## 20 Puzzles to Test Yourselves
 - TODO
 
